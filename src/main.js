@@ -1,34 +1,20 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 import { setupCountdown } from './countdown.js'
 
 document.querySelector('#app').innerHTML = `
+  <div class="logo-container">
+    <img src="/logo_Puig.svg" alt="Puig logo" class="puig-logo" />
+  </div>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    
+    <h1></h1>
     <div class="countdown-section">
-      <h2>Time Remaining</h2>
+      <h1>The new <span style="font-weight: 400;">Home of Puig</span><br>is coming</h1>
       <div id="countdown"></div>
     </div>
-    
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
   </div>
 `
-
-setupCounter(document.querySelector('#counter'))
 
 // Set up countdown to a date 30 days from now
 const targetDate = new Date();
