@@ -2,6 +2,10 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCountdown } from './countdown.js'
+import { inject } from '@vercel/analytics'
+
+// Initialize Vercel Analytics
+inject()
 
 document.querySelector('#app').innerHTML = `
   <div class="logo-container">
